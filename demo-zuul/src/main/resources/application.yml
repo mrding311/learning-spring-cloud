@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+zuul:
+  routes:
+    demo-one:
+      path: /demo-one/**
+      serviceId: demo-one
+      stripPrefix: false
+
+ribbon:
+  eureka:
+    enabled: false
+
+demo-one:
+  ribbon:
+    listOfServers: localhost:8000,localhost:8001

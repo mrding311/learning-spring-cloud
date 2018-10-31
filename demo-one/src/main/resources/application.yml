@@ -1,0 +1,4 @@
+server:
+  servlet:
+    path: /demo-one
+  port: 80
