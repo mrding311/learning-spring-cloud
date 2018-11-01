@@ -14,4 +14,7 @@ ribbon:
 
 demo-one:
   ribbon:
-    listOfServers: localhost:8000,localhost:8001
+    listOfServers: 172.17.0.2:80,172.17.0.3:80
+
+logging:
+  path: /var/local/dingshuai/demo-zuul/logs
